@@ -13,6 +13,7 @@ This challenge focuses on classes in JavaScript using the new `class` keyword.
 * [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 * [X] Push commits: git push origin `<firstName-lastName>`.
 
+
 **Follow these steps for completing your project.**
 
 * [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**

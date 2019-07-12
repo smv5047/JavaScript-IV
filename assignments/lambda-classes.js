@@ -82,15 +82,40 @@ class Person {
  
  
  console.log(fred.grade(stephen, 'JavaScript'))
- 
- 
  console.log(stephen);
- 
  console.log(stephen.listsSubjects());
- 
  console.log(stephen.PRAssignment('JavaScript'));
- 
  console.log(stephen.sprintChallenge('JavaScript'));
  
- 
+ class ProjectManager extends Instructor{
+    constructor (personAttributes) {
+        super(personAttributes);
+        this.gradClassName = personAttributes.gradClassName;
+        this.favInstructor = personAttributes.favInstructor;
+    }
+
+    standUp (channel) {
+        return `${this.name} announces to ${channel}, @channel standy times!`;
+    }
+
+    debugsCode (student, subject) {
+        return `${this.name} debugs ${student.name}'s code on ${subject}`;
+    }
+ }
+
+
+ const Irving = new ProjectManager( {
+    name: 'Irving',
+    age: 28,
+    location: 'NYC',
+    favLanguage: 'JavaScript',
+    specialty: 'Front-end',
+    catchPhrase: `Don't forget the homies`,
+    gradClassName: 'WebPT8',
+    favInstructor: 'Keiran'
+ });
+
+ console.log(Irving);
+ console.log(Irving.standUp('Hired'));
+ console.log(Irving.debugsCode(stephen, 'JS IV'))
  
